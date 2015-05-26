@@ -3,6 +3,13 @@ body {
 	background-image: url(../img/background.jpg);
 	background-attachment:fixed;
 	background-size: cover;
+	font-family: 'Open Sans','helvetica',arial,sans-serif;
+	font-weight: 300;
+  	color: #62686f;
+}
+h1 , h2 , h3, h4 , h5 , h6 {
+	color: #333;
+	font-weight: 300;
 }
 .container {
 	margin: 0 auto;
@@ -19,6 +26,7 @@ body {
 	border-radius: 999px;
 	box-shadow: 0 0px 2px 1px rgba(0,0,0,0.2);
 }
+/******************header********************/
 .header {
 	margin: 170px auto;
 	padding: 1px;
@@ -35,9 +43,92 @@ body {
 	margin: 0 auto;
 	margin-bottom: 20px;
 	width: 38%;
-	font-weight: 300;
+	/* font-weight: 300; */
 	font-size: 50px;
-	font-family: 'Open Sans','helvetica',arial,sans-serif;
+	/* font-family: 'Open Sans','helvetica',arial,sans-serif; */
 	color: white;
 	text-shadow:0 1px rgba(0,0,0,0.3);
+}
+
+/*********************nav*********************/
+.main-nav {
+	background-color: #333;
+}
+.main-nav ul li {
+	margin: 15px 10px;
+}
+
+.main-nav ul li a {
+	color: #fff;
+	font-size: 0.9rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.main-nav ul li a:hover {
+	text-decoration: underline;
+}
+ul.nostyle {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.inline-items li {
+	display: inline-block;
+}
+
+.main-nav ul {
+	text-align: center;
+}
+/****************section******************/
+.info-section {
+	padding: 30px 60;
+	margin-top: 0px;
+	background-color: #fff;
+}
+.whatido__skill--list {
+	overflow: hidden;
+}
+.whatido__skill {
+	margin-top: 40px;
+	float: left;
+	width: 33.3%;
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-top: 108px;
+}
+
+.whatido h2:after {
+	margin: 20px auto;
+	content: "";
+	display: block;
+	width: 90px;
+	border-bottom: 3px solid black;
+	/*clear: both;*/
+
+}
+
+.whatido__skill--code {
+	background-image: url(../img/skill-code.png);
+}
+.whatido__skill--design {
+	background-image: url(../img/skill-design.png);
+}
+.whatido__skill--product {
+	background-image: url(../img/skill-product.png);
+}
+
+.info-section header {
+	text-align: center;
+}
+
+.info-section header h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.info-section__description {
+  font-style: italic;
 }
