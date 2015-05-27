@@ -1,3 +1,6 @@
+html {
+	box-sizing: border-box;
+}
 body {
 	background-position: center;
 	background-image: url(../img/background.jpg);
@@ -10,6 +13,9 @@ body {
 h1 , h2 , h3, h4 , h5 , h6 {
 	color: #333;
 	font-weight: 300;
+}
+* , *:before,*:after {
+	box-sizing: inherit;
 }
 .container {
 	margin: 0 auto;
@@ -29,6 +35,7 @@ h1 , h2 , h3, h4 , h5 , h6 {
 /******************header********************/
 .header {
 	margin: 170px auto;
+	margin-bottom: 0px;
 	padding: 1px;
 	width: 960px;
 	background-image: url(../img/banner.jpg);
@@ -98,8 +105,11 @@ ul.inline-items li {
 	background-position: center top;
 	padding-top: 108px;
 }
+.whatido__skill  h3,p {
+	text-align: center;
+}
 
-.whatido h2:after {
+h2.has_split_line:after {
 	margin: 20px auto;
 	content: "";
 	display: block;
@@ -131,4 +141,29 @@ ul.inline-items li {
 
 .info-section__description {
   font-style: italic;
+}
+
+.education-experience__list li {
+	overflow: hidden;
+}
+.education-experience__item img {
+	float: left;
+	margin-top: 20px;
+	margin-right: 60px;
+	width: 180px;
+}
+ul.photos__list {
+	overflow: hidden;
+}
+.photos__list li {
+	width: 25%;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+
+}
+.photos__list img{
+/*float: left;*/
+	padding: 10px;
+	width: 100%;
 }
