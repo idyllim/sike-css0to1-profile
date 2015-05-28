@@ -128,9 +128,9 @@ See: http://www.sitepoint.com/web-foundations/doctypes/
 
       <section class="info-section get-in-touch">
         <header>
-          <h2>Get in Touch</h2>
+          <h2 class="has_split_line">Get in Touch</h2>
         </header>
-        <ul class="get-in-touch__list">
+        <ul class="get-in-touch__list nostyle">
           <li>
             <a href="#"><img src="img/fb-icon.png" alt=""></a>
             <p>Facebook</p>
@@ -152,15 +152,21 @@ See: http://www.sitepoint.com/web-foundations/doctypes/
 
       <section class="info-section contact">
         <header>
-          <h2>Or...Leave a Message</h2>
+          <h2 class="has_split_line">Or...Leave a Message</h2>
         </header>
-        <form action="">
-          <label for="name">Name</label>
-          <input name="name" id="name" type="text">
-          <label for="email">Email</label>
-          <input name="email" id="email" type="email">
-          <label for="message">Message</label>
-          <textarea name="message" id="message"></textarea>
+        <form class="contact_form" action="">
+          <div class="form_box">
+            <label class="box_left" for="name">Name</label>
+            <input name="name" id="name" type="text">
+          </div>
+          <div class="form_box">
+            <label class="box_left" for="email">Email</label>
+            <input name="email" id="email" type="email">
+          </div>
+          <div class="form_box">
+            <label class="box_left" for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
           <button type="submit">Submit</button>
         </form>
       </section>

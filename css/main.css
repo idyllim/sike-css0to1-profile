@@ -25,9 +25,9 @@ h1 , h2 , h3, h4 , h5 , h6 {
 .main-header__avatar {
 	display: block;
 	margin: 0 auto;
-	margin-top: -170px;
+	margin-top: -120px;
 	border: 3px solid white;
-	width: 25%;
+	width: 15%;
 
 	border-radius: 999px;
 	box-shadow: 0 0px 2px 1px rgba(0,0,0,0.2);
@@ -105,8 +105,9 @@ ul.inline-items li {
 	background-position: center top;
 	padding-top: 108px;
 }
-.whatido__skill  h3,p {
-	text-align: center;
+p.education-experience__title {
+	text-align: left;
+	font-weight: 500;
 }
 
 h2.has_split_line:after {
@@ -166,4 +167,57 @@ ul.photos__list {
 /*float: left;*/
 	padding: 10px;
 	width: 100%;
+}
+.get-in-touch__list {
+	width: 100%;
+	overflow: hidden;
+}
+.get-in-touch__list li {
+	float: left;
+	padding-top: 40px;
+	width: 25%;
+	text-align: center;
+}
+.contact {
+	width: 100%;
+	text-align: center;
+
+}
+.contact input, .contact textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact button {
+  border: none;
+  border-radius: 9999px;
+
+  background: #ffd524;
+
+  cursor: pointer;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  color: #fff;
+  box-shadow: 0 3px 0 #daae1d;
+}
+.contact_form {
+	width: 40%;
+	margin: 60px auto;
+}
+
+.contact_form input, button, textarea{
+	padding: 8px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.form_box {
+	position: relative;
+	/*width: 100%;*/
+}
+label.box_left {
+	margin-right: 10px;
+	margin-top: 10px;
+	position: absolute;
+	text-align: right;
+	top: 0;
+	right: 100%;
+	width: 100;
 }
